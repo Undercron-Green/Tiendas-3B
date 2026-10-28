@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#e31b23">
+	<meta name="description" content="Explora el ahorro inteligente de Tiendas 3B: ofertas, productos y atención al cliente.">
+	<title>Tiendas 3B | Ahorro que se nota</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#main-content">Saltar al contenido</a>
+	<div class="app-shell">
+		<aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+			<a class="brand" href="#inicio" data-page-link="inicio" aria-label="Tiendas 3B, ir al inicio">
+				<span class="brand-mark">3B</span>
+				<span class="brand-copy"><strong>TIENDAS</strong><small>BUENO · BONITO · BARATO</small></span>
+			</a>
+			<div class="sidebar-label">MENÚ PRINCIPAL</div>
+			<nav class="main-nav">
+				<button class="nav-link is-active" type="button" data-page-link="inicio" aria-current="page">
+					<span class="nav-icon" aria-hidden="true">⌂</span><span>Inicio</span>
+				</button>
+				<button class="nav-link" type="button" data-page-link="tienda">
+					<span class="nav-icon" aria-hidden="true">▤</span><span>Tienda virtual</span>
+					<span class="nav-count" id="nav-cart-count" aria-label="0 artículos">0</span>
+				</button>
+				<button class="nav-link" type="button" data-page-link="contacto">
+					<span class="nav-icon" aria-hidden="true">✉</span><span>Contacto & equipo</span>
+				</button>
+			</nav>
+			<div class="sidebar-bottom">
+				<div class="sidebar-promo"><span class="promo-spark">✦</span><strong>Tu dinero rinde más</strong><p>Precios bajos todos los días.</p></div>
+				<span class="sidebar-footnote">Una tienda cerca de ti</span>
+			</div>
+		</aside>
+
+		<div class="sidebar-scrim" id="sidebar-scrim"></div>
+		<div class="main-column">
+			<header class="topbar">
+				<button class="icon-button menu-button" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">
+					<span class="hamburger" aria-hidden="true"><i></i><i></i><i></i></span>
+				</button>
+				<div class="breadcrumb"><span>TIENDAS 3B</span><span class="crumb-separator">/</span><strong id="page-title">Inicio</strong></div>
+				<div class="topbar-actions">
+					<span class="location-label"><span class="location-dot"></span>Precios bajos cerca de ti</span>
+					<button class="cart-trigger" id="open-cart" type="button" aria-label="Abrir carrito, 0 artículos">
+						<span class="cart-icon" aria-hidden="true">▱</span><span class="cart-trigger-label">Mi carrito</span><span class="cart-count" id="header-cart-count">0</span>
+					</button>
+				</div>
+			</header>
+
+			<main id="main-content" tabindex="-1">
+				<section class="page-section is-visible" id="page-inicio" aria-labelledby="home-heading">
+					<div class="hero-section">
+						<div class="hero-copy">
+							<span class="eyebrow"><span class="eyebrow-line"></span>AHORRO TODOS LOS DÍAS</span>
+							<h1 id="home-heading">Bueno, Bonito<br>y <em>Barato.</em></h1>
+							<p>El ahorro se siente en casa: encuentra tus productos esenciales a precios que sí hacen la diferencia.</p>
+							<div class="hero-actions">
+								<button class="button button-primary" type="button" data-go-to="tienda">Explorar productos <span aria-hidden="true">→</span></button>
+								<span class="hero-note"><span class="check-mark">✓</span> Ahorro todos los días</span>
+							</div>
+							<div class="hero-stats"><div><strong>+1,000</strong><span>tiendas en México</span></div><i></i><div><strong>Precios</strong><span>bajos de verdad</span></div></div>
+						</div>
+						<div class="hero-art" role="img" aria-label="Frutas y verduras frescas en una tienda de abarrotes">
+							<div class="hero-image"></div>
+							<div class="hero-sticker"><span>AHORRO</span><strong>que sí<br>se nota</strong><b>3B</b></div>
+							<div class="hero-caption"><span>01 / 03</span><i></i><span>LO BUENO DE TODOS LOS DÍAS</span></div>
+							<div class="hero-scribble" aria-hidden="true">*</div>
+						</div>
+						<div class="hero-vertical-label">PRECIO BAJO · CERCA DE TI · TODOS LOS DÍAS</div>
+					</div>
+
+					<div class="ticker" aria-label="Promoción"><div class="ticker-track"><span>AHORRO QUE SE NOTA</span><b>✳</b><span>BUENO, BONITO Y BARATO</span><b>✳</b><span>PRECIOS BAJOS TODOS LOS DÍAS</span><b>✳</b><span>AHORRO QUE SE NOTA</span><b>✳</b></div></div>
+
+					<section class="content-section values-section" aria-labelledby="values-heading">
+						<div class="section-heading"><div><span class="eyebrow">NUESTRA ESENCIA</span><h2 id="values-heading">Lo bueno se comparte.</h2></div><p>Misión, visión y valores · contenido ilustrativo del prototipo.</p></div>
+						<div class="value-grid">
+							<article class="value-card value-mission"><span class="value-number">01</span><span class="value-symbol" aria-hidden="true">◎</span><h3>Misión</h3><p>Acercar productos esenciales de calidad con precios accesibles y una compra sencilla para cada hogar.</p><span class="card-rule"></span></article>
+							<article class="value-card value-vision"><span class="value-number">02</span><span class="value-symbol" aria-hidden="true">↗</span><h3>Visión</h3><p>Ser la tienda de descuento cercana y confiable que acompaña a más familias en su día a día.</p><span class="card-rule"></span></article>
+							<article class="value-card value-quality"><span class="value-number">03</span><span class="value-symbol" aria-hidden="true">✳</span><h3>Calidad</h3><p>Productos cuidadosamente seleccionados para acompañarte en cada momento.</p><span class="card-rule"></span></article>
+							<article class="value-card value-savings"><span class="value-number">04</span><span class="value-symbol" aria-hidden="true">↘</span><h3>Ahorro</h3><p>Precios accesibles que ayudan a cuidar lo que más importa: tu hogar.</p><span class="card-rule"></span></article>
+							<article class="value-card value-near"><span class="value-number">05</span><span class="value-symbol" aria-hidden="true">⌖</span><h3>Cercanía</h3><p>Estamos en tu colonia, a la vuelta de casa y cerca de tu día a día.</p><span class="card-rule"></span></article>
+						</div>
+					</section>
+
+					<section class="discount-band" aria-labelledby="discount-heading">
+						<div class="discount-mark">3B<span>®</span></div>
+						<div class="discount-copy"><span class="eyebrow">NUESTRO MODELO</span><h2 id="discount-heading">Menos vueltas.<br><em>Más ahorro.</em></h2></div>
+						<div class="discount-detail"><p>El modelo <strong>Hard Discount</strong> mantiene una operación sencilla, un surtido inteligente y costos controlados para ofrecer precios bajos sin complicar tu compra.</p><div class="discount-points"><span><b>01</b> Surtido esencial</span><span><b>02</b> Operación eficiente</span><span><b>03</b> Ahorro diario</span></div></div>
+						<div class="discount-decoration" aria-hidden="true">3</div>
+					</section>
+
+					<section class="content-section savings-section" aria-labelledby="savings-heading">
+						<div class="section-heading"><div><span class="eyebrow">COMPARADOR DE AHORRO</span><h2 id="savings-heading">¿Cuánto puedes ahorrar?</h2></div><p>Selecciona algunos productos básicos para comparar precios de referencia.</p></div>
+						<div class="savings-widget">
+							<div class="savings-list">
+								<div class="widget-topline"><strong>Productos esenciales</strong><span>AHORRO ESTIMADO POR PRODUCTO</span></div>
+								<div class="savings-options">
+									<label class="savings-chip"><input type="checkbox" data-saving-item="arroz"><span>Arroz 1 kg</span><strong>−$8</strong></label>
+									<label class="savings-chip"><input type="checkbox" data-saving-item="leche"><span>Leche 1 L</span><strong>−$6</strong></label>
+									<label class="savings-chip"><input type="checkbox" data-saving-item="aceite"><span>Aceite 1 L</span><strong>−$11</strong></label>
+									<label class="savings-chip"><input type="checkbox" data-saving-item="frijol"><span>Frijol 900 g</span><strong>−$9</strong></label>
+									<label class="savings-chip"><input type="checkbox" data-saving-item="detergente"><span>Detergente 1 kg</span><strong>−$11</strong></label>
+								</div>
+							</div>
+							<div class="savings-result"><span class="result-label">TU AHORRO ESTIMADO</span><strong class="savings-highlight" id="saving-difference">$0.00</strong><div class="savings-breakdown"><div class="result-line"><span>Canasta en 3B</span><strong id="saving-3b">$0.00</strong></div><div class="result-line"><span>Precio tradicional</span><strong id="saving-traditional">$0.00</strong></div></div><p>Precios de referencia; pueden variar por tienda y disponibilidad.</p></div>
+						</div>
+					</section>
+				</section>
+
+				<section class="page-section" id="page-tienda" aria-labelledby="store-heading" hidden>
+					<div class="store-intro"><div><span class="eyebrow"><span class="eyebrow-line"></span>COMPRA FÁCIL, COMPRA CERCA</span><h1 id="store-heading">La despensa<br><em>en buenos precios.</em></h1></div><div class="store-intro-note"><span>CATÁLOGO 3B</span><p>Tus básicos de cada día, juntos en un solo lugar.</p></div></div>
+					<div class="store-toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><input id="product-search" type="search" placeholder="Busca un producto…" autocomplete="off" aria-label="Buscar productos"><kbd>⌘ K</kbd></label><div class="filter-list" role="group" aria-label="Filtrar por categoría"><button class="filter-button is-selected" type="button" data-category="todos" aria-pressed="true">Todos</button><button class="filter-button" type="button" data-category="abarrotes" aria-pressed="false">Abarrotes</button><button class="filter-button" type="button" data-category="lacteos" aria-pressed="false">Lácteos</button><button class="filter-button" type="button" data-category="limpieza" aria-pressed="false">Limpieza</button><button class="filter-button" type="button" data-category="marcas-3b" aria-pressed="false">Marcas 3B</button></div></div>
+					<div class="catalog-meta"><span id="catalog-count">12 productos</span><span><span class="stock-dot"></span> Disponibles para ti</span></div>
+					<div class="product-grid" id="product-grid" aria-live="polite"></div>
+					<div class="empty-state" id="empty-state" hidden><span>⌕</span><h2>No encontramos ese producto</h2><p>Prueba otra palabra o categoría.</p><button class="button button-outline" id="clear-search" type="button">Limpiar búsqueda</button></div>
+					<div class="store-footer-note"><span class="footer-3b">3B</span><p>Productos esenciales. Precios que hacen rendir más.</p></div>
+				</section>
+
+				<section class="page-section" id="page-contacto" aria-labelledby="contact-heading" hidden>
+					<div class="contact-hero"><div><span class="eyebrow"><span class="eyebrow-line"></span>ESTAMOS PARA ESCUCHARTE</span><h1 id="contact-heading">Hablemos <em>claro.</em></h1></div><p>¿Tienes una duda, una sugerencia o simplemente quieres saludarnos? Aquí estamos.</p><span class="contact-big-3b" aria-hidden="true">3B</span></div>
+					<div class="contact-layout">
+						<section class="contact-main" aria-labelledby="team-heading"><div class="section-heading compact-heading"><div><span class="eyebrow">QUIÉNES SOMOS</span><h2 id="team-heading">Equipo de desarrollo</h2></div></div>
+							<div class="team-grid">
+								<article class="team-card"><div class="team-avatar avatar-red">DM</div><div><h3>Daniel Muñoz Hernández</h3><span class="team-role">Desarrollador web</span><a href="mailto:danielnathan333@gmail.com">danielnathan333@gmail.com</a></div></article>
+								<article class="team-card"><div class="team-avatar avatar-yellow">AC</div><div><h3>Alexis Castillo Gonzáles</h3><span class="team-role">Equipo de desarrollo</span></div></article>
+								<article class="team-card"><div class="team-avatar avatar-green">EC</div><div><h3>Erick Antonio Castillo Martines</h3><span class="team-role">Equipo de desarrollo</span></div></article>
+								<article class="team-card"><div class="team-avatar avatar-red">RD</div><div><h3>Ricardo Devesa Duran</h3><span class="team-role">Equipo de desarrollo</span></div></article>
+								<article class="team-card"><div class="team-avatar avatar-yellow">JN</div><div><h3>Joel Nava Botello</h3><span class="team-role">Equipo de desarrollo</span></div></article>
+							</div>
+							<form class="contact-form" id="contact-form" novalidate><div class="form-heading"><div><span class="eyebrow">MENSAJE DIRECTO</span><h2>Cuéntanos qué necesitas.</h2></div><span class="form-required">* Campos obligatorios</span></div>
+								<div class="form-grid"><label class="form-field"><span>Nombre *</span><input name="name" type="text" autocomplete="name" required minlength="2" placeholder="Tu nombre"><small class="field-error" aria-live="polite"></small></label><label class="form-field"><span>Correo electrónico *</span><input name="email" type="email" autocomplete="email" required placeholder="nombre@correo.com"><small class="field-error" aria-live="polite"></small></label><label class="form-field field-full"><span>Asunto *</span><select name="subject" required><option value="">Selecciona un tema</option><option>Producto o disponibilidad</option><option>Comentario sobre una tienda</option><option>Otra consulta</option></select><small class="field-error" aria-live="polite"></small></label><label class="form-field field-full"><span>Mensaje *</span><textarea name="message" rows="4" required minlength="10" placeholder="Escribe tu mensaje (mínimo 10 caracteres)"></textarea><small class="field-error" aria-live="polite"></small></label></div>
+								<div class="form-submit-row"><span id="form-status" class="form-status" role="status" aria-live="polite"></span><button class="button button-primary" type="submit">Enviar mensaje <span aria-hidden="true">→</span></button></div>
+							</form>
+						</section>
+						<aside class="contact-aside"><section class="support-card"><span class="support-icon" aria-hidden="true">☎</span><span class="eyebrow">ATENCIÓN AL CLIENTE</span><h2>Te atendemos.</h2><a class="support-phone" href="tel:+525545109999">55 4510 9999</a><p>Escríbenos o llámanos para compartir tus dudas y comentarios.</p><div class="support-hours"><span>Horario de atención</span><strong>Lunes a viernes · 9:00–18:00 h</strong></div></section>
+							<section class="faq-section" aria-labelledby="faq-heading"><span class="eyebrow">AQUÍ VA UNA AYUDA</span><h2 id="faq-heading">Preguntas frecuentes</h2><details class="faq-item"><summary>¿Los precios son iguales en todas las tiendas?<span>+</span></summary><p>Los precios y la disponibilidad pueden cambiar según la ubicación y las existencias de cada tienda.</p></details><details class="faq-item"><summary>¿Puedo comprar en línea?<span>+</span></summary><p>Este catálogo es una demostración interactiva. No procesa pedidos ni pagos reales.</p></details><details class="faq-item"><summary>¿Cómo puedo compartir una sugerencia?<span>+</span></summary><p>Completa el formulario de esta página. La confirmación es local y no se envía a un servidor.</p></details></section>
+						</aside>
+					</div>
+				</section>
+			</main>
+			<footer class="site-footer"><span>© 2026 TIENDAS 3B · PROYECTO DEMOSTRATIVO</span><span>BUENO · BONITO · BARATO</span></footer>
+		</div>
+	</div>
+
+	<div class="drawer-scrim" id="drawer-scrim"></div>
+	<aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-heading" aria-hidden="true" inert>
+		<div class="drawer-header"><div><span class="eyebrow">TU COMPRA</span><h2 id="cart-heading">Mi carrito <span id="drawer-item-count">(0)</span></h2></div><button class="icon-button close-drawer" type="button" aria-label="Cerrar carrito">×</button></div>
+		<div class="cart-items" id="cart-items"></div>
+		<div class="cart-empty" id="cart-empty"><span class="empty-bag" aria-hidden="true">▱</span><strong>Tu carrito está esperando.</strong><p>Agrega algo rico a tu despensa.</p><button class="text-button" id="go-shopping" type="button">Ir al catálogo <span aria-hidden="true">→</span></button></div>
+		<div class="cart-summary" id="cart-summary" hidden><div class="summary-row"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div><div class="summary-row"><span>IVA (16%)</span><strong id="cart-tax">$0.00</strong></div><div class="summary-total"><span>Total estimado</span><strong id="cart-total">$0.00</strong></div><p>El IVA se simula al 16% para fines demostrativos.</p><button class="button button-primary checkout-button" id="checkout-button" type="button">Finalizar compra <span aria-hidden="true">→</span></button><button class="continue-shopping" id="continue-shopping" type="button">Seguir comprando</button></div>
+	</aside>
+
+	<div class="modal-scrim" id="ticket-modal" aria-hidden="true" inert>
+		<section class="ticket-dialog" role="dialog" aria-modal="true" aria-labelledby="ticket-title">
+			<div class="ticket-modal-toolbar"><div><span class="eyebrow">COMPRA SIMULADA</span><h2 id="ticket-title">Tu ticket está listo</h2></div><button class="icon-button" id="close-ticket" type="button" aria-label="Cerrar ticket">×</button></div>
+			<article class="receipt" id="print-ticket" aria-label="Ticket de compra Tiendas 3B"></article>
+			<div class="ticket-actions"><button class="button button-outline" id="close-ticket-secondary" type="button">Cerrar</button><button class="button button-primary" id="print-ticket-button" type="button"><span aria-hidden="true">▣</span> Imprimir ticket</button></div>
+		</section>
+	</div>
+	<div class="toast" id="toast" role="status" aria-live="polite"><span class="toast-check">✓</span><span id="toast-message">Producto agregado correctamente</span></div>
+</body>
+</html>
